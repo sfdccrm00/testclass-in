@@ -1,0 +1,30 @@
+@istest
+public class testclassvfcntrl_salesmotionselection { 
+    public static @istest void testclassvfcntrl_salesmotionselection(){
+	
+	Contact cont = New Contact();
+        cont.FirstName ='testcon';
+        cont.LastName ='con';
+        cont.AccountId = a.Id;
+        Insert cont;
+	user testuser = new user();
+	 insert testuser;.
+	 final Integer recordCount = Limits.getLimitQueries() + 1;
+    List<Account> accounts = new List<Account>();
+    for (Integer i = 0; i < recordCount; i++)
+    {
+        accounts.add(new Account(OwnerId=testUser.Id/*, requiredFields*/));
+    }
+    insert accounts;
+
+    List<Account> allAccounts;
+    system.runAs(testUser)
+    {
+        Test.startTest();
+            allAccounts = MyClass.getAllAccounts();
+        Test.stopTest();
+    }
+
+    system.assertEquals(recordCount, allAccounts.size(),
+	}
+	}
